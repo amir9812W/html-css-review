@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-sidebar-closed">
+      <div class="pop-none">
+        <div class="setting-add">
+          <div>
+            <input class="input-cat" type="text" placeholder="enter your categories's name">
+            <button onclick="categoryGenrator()">Enter</button>
+          </div>
+          <button class="cancel" onclick="showModal()">X</button>
+        </div>
+      </div>
+      <div class="sidebar-closed">
+        <button class="toggle-button" onclick="Toggler()"> 
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+        </button>
+        <div class="header-closed">
+          <img src="./components/instagram.png" alt="instagram" width="30px">
+          <h4 style="font-family: Roboto; font-weight: 450;">Scene.Point</h4>
+        </div>
+        <div class="options">
+          <section class="section-1">
+            <p style="font-size: 12px; margin: 0; padding-left: 10%; padding-top: -20%;">Workspaces</p>
+            <div class="workspace-one">
+              <div class="dash-closed">
+                <div class="dashs">
+                  <div class="dash-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z"/></svg>
+                    <p>Dashboard</p>
+                  </div>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="dash-closed">
+                <div class="dashs">
+                  <div class="dash-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z"/></svg>
+                    <p>Dashboard</p>
+                  </div>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="dash-closed">
+                <div class="dashs">
+                  <div class="dash-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z"/></svg>
+                    <p>Dashboard</p>
+                  </div>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <ul class="dash-closed active">
+                <div class="dashs">
+                  <div class="dash-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z"/></svg>
+                    <p>Dashboard</p>
+                  </div>
+                  <button onclick="subMenuShower()" class="toggle-handler-nigga">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                  </button>
+                </div>
+                  <li class="sub">
+                    <a href="#">
+                      <span>People</span>
+                    </a>
+                  </li>
+                  <li class="sub">
+                    <a href="#">
+                      <span>Candidates</span>
+                    </a>
+                  </li>
+              </ul>
+              <div class="dash-closed">
+                <div class="dashs">
+                  <div class="dash-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z"/></svg>
+                    <p>Dashboard</p>
+                  </div>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                  </button>
+                </div>
+              </div>
+              
+
+            </div>
+          </section>
+          <section class="section-2">
+            <div class="nanisure-closed">
+              <p>Categories</p>
+              <button class="dropdown" onclick="showModal()">+</button>
+            </div>
+            <div class="section-zwei-closed">
+         
+            </div>
+          </section>
+        </div>
+        <div class="user-closed">
+          <div class="left-sec-closed">
+            <img src="./components/photomode_01012024_135751.png" alt="prof" width=40px" height="40px" style="background-size: cover; border-radius: 50%;">
+            <div class="info">
+              <p class="two">Elizabeth parker</p>
+              <p class="one">elisomething@gmail.com</p>
+            </div>
+          </div>
+          <div class="right-sec">
+            <button>X</button>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="header-main">
+          <input type="text" placeholder="Search For something" class="search">
+          <div class="buttons">
+            <button class="follow">Follow</button>
+            <button class="date"> Octobor 23,2024</button>
+            <button class="create">Create</button>
+          </div>
+        </div>
+        <div class="container-content">
+          <section class="main-1">
+            <h1 style="position: absolute; top: -45px;
+            color: black;">Candidates</h1>
+            <div class="gradient-content">
+              <h2>Octobor Report</h2>
+              <h5 style="text-wrap-style:balance;
+              max-width: 600px;">with the aid of our AI analysis, you can recieve a throughoutly informed and comprehensive evaluation of your data</h5>
+              <div class="gradient-buttons">
+                <button class="main-1-button">Try AI
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M240-120q-45 0-89-22t-71-58q26 0 53-20.5t27-59.5q0-50 35-85t85-35q50 0 85 35t35 85q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T320-280q0-17-11.5-28.5T280-320q-17 0-28.5 11.5T240-280q0 23-5.5 42T220-202q5 2 10 2h10Zm230-160L360-470l358-358q11-11 27.5-11.5T774-828l54 54q12 12 12 28t-12 28L470-360Zm-190 80Z"/></svg>
+                </button>
+                <button class="main-2-button">Learn More</button>
+              </div>
+            </div>
+          </section>
+          <section class="main-2">
+            <div class="serach-area">
+              <div class="sarch">
+                <input type="text" placeholder="Search for role or candidates">
+                <div class="search-buttons">
+                  <button class="sarch-1">=</button>
+                  <button class="sarch-2">+</button>
+                </div>
+              </div>
+              <div class="people">
+                <span class="loader"></span>
+              </div>
+            </div>
+            <div class="feed">
+              <div class="profile">
+                <div class="left-section-prof">
+                  <img src="./components/profile.png" alt="akiw" width="60px" style="border-radius: 10px;">
+                  <h1>Amir Hossein</h1>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></svg>
+                  <p>FrontEnd Developer</p>
+                </div>
+                <div class="right-section-profile">
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                  </button>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M80 0v-160h800V0H80Zm160-320h56l312-311-29-29-28-28-311 312v56Zm-80 80v-170l448-447q11-11 25.5-17t30.5-6q16 0 31 6t27 18l55 56q12 11 17.5 26t5.5 31q0 15-5.5 29.5T777-687L330-240H160Zm560-504-56-56 56 56ZM608-631l-29-29-28-28 57 57Z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="comments">
+                <button class="nani" onclick="toLeft()">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black" style="margin-right: -6px;"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                </button>
+                <button class="button-2" onclick="toRight()">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+                </button>
+                <span class="loader-2"></span>
+              </div>
+              <div class="news">
+                <div class="icons">
+                  <div class="event">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M600-80v-80h160v-400H200v160h-80v-320q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H600ZM320 0l-56-56 103-104H40v-80h327L264-344l56-56 200 200L320 0ZM200-640h560v-80H200v80Zm0 0v-80 80Z"/></svg>
+                    <div class="content-1">
+                      <p style="font-family: Roboto; font-size: 16px;
+                      font-weight: 700;">Executive interview data(31.12.22)confirmed by darrel steward</p>
+                      <p style="font-family: Roboto; color: rgb(96, 95, 95);">added at 12.01.23 - 14:24</p>
+                    </div>
+                  </div>
+                  <div class="contact-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M185-80q-17 0-29.5-12.5T143-122v-105q0-90 56-159t144-88q-40 28-62 70.5T259-312v190q0 11 3 22t10 20h-87Zm147 0q-17 0-29.5-12.5T290-122v-190q0-70 49.5-119T459-480h189q70 0 119 49t49 119v64q0 70-49 119T648-80H332Zm148-484q-66 0-112-46t-46-112q0-66 46-112t112-46q66 0 112 46t46 112q0 66-46 112t-112 46Z"/></svg>
+                    <div class="content-1">
+                      <p style="font-family: Roboto; font-size: 16px;
+                      font-weight: 700;">Bill murrey <span style="color: gray;">upload</span><span style="color: rgb(38, 174, 247);"> cv.murrey.pdf @</span></p>
+                      <p style="color: rgb(97, 96, 96); font-family: Roboto;">added at 12.1.23 - 14.23</p>
+                    </div>
+                  </div>
+                  <div class="comment-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                    <div class="content-1">
+                      <p style="font-family: Roboto; font-weight: 700;">Joy division <span style="color: rgb(89, 88, 88);">wrote comment:</span></p>
+                      <p style="font-family: Roboto;">Let's provide the team with the highest quality participants tailored for the research needs recruit. book & pay quality research participants in a fraction of the time of agencies.</p>
+                      <p style="font-family: Roboto; color: rgb(88, 88, 88);">addedd at 12.01.23 - 14.22</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="buttons-edit">
+                  <button><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M80 0v-160h800V0H80Zm160-320h56l312-311-29-29-28-28-311 312v56Zm-80 80v-170l448-447q11-11 25.5-17t30.5-6q16 0 31 6t27 18l55 56q12 11 17.5 26t5.5 31q0 15-5.5 29.5T777-687L330-240H160Zm560-504-56-56 56 56ZM608-631l-29-29-28-28 57 57Z"></path></svg></button>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer class="footer">
+          <h1>&copy 2024 all rights reseverd </h1>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
